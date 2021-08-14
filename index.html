@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Musico - Music Recommendation bot</title>
+     
+
+        <!--Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i" rel="stylesheet">
+
+        <!--vendors styles-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Bootstrap CSS / Color Scheme -->
+        <link rel="stylesheet" href="css/default.css" id="theme-color">
+    </head>
+    <body>
+
+       
+        <!--hero header-->
+        <section class="pt-7 pt-md-5" id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mx-auto my-auto text-center">
+                        <h1>Hello, I am Musico.</h1>
+                        <p class="lead mt-4 mb-1">
+                            Made with <b>Watson Assistant</b> by  <b>Kashish Sahu (18100BTCMCI02954)</b>
+                        </p>
+						<p class="lead mt-4 mb-1">
+                            Musico is Chatbot that suggests music based on your preferences and interests.
+                        </p>
+                        <p><img class="img-fluid" src="https://i.pinimg.com/originals/0c/67/5a/0c675a8e1061478d2b7b21b330093444.gif" alt="Mockup" /></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+		<script>
+		  window.watsonAssistantChatOptions = {
+			  integrationID: "891a1953-e40c-4b62-9556-76fbb291f29d", // The ID of this integration.
+			  region: "us-south", // The region your integration is hosted in.
+			  serviceInstanceID: "ef99a10a-c80a-41ad-96ac-7754042132cd", // The ID of your service instance.
+			  onLoad: function(instance) { instance.render(); }
+			};
+		  setTimeout(function(){
+			const t=document.createElement('script');
+			t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+			document.head.appendChild(t);
+		  });
+		</script>
+    </body>
+</html>
